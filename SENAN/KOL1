@@ -1,0 +1,226 @@
+# Sprint 1a - ÆSAS VERILÆNLÆR VÆ OPERATORLAR
+
+# Task 1
+print("Task 1")
+a = str(123)
+print(a, type(a))
+
+# Task 2
+print("\nTask 2")
+b = int(19.99)
+print(b)
+
+# Task 3
+print("\nTask 3")
+c = int("500")
+print(c / 2)
+
+# Task 4
+print("\nTask 4")
+a, b = 8, 12
+print(a < b)
+print(a == b)
+
+# Task 5
+print("\nTask 5")
+x, y, z = 5, 10, 15
+print((x < y) and (y < z))
+
+# Task 6
+print("\nTask 6")
+print(25 // 4)  # Tam bÃ¶lmÉ™
+print(25 % 4)   # QalÄ±q
+print(25 / 4)   # Adi bÃ¶lmÉ™
+
+# Task 7
+print("\nTask 7")
+print(3 ** 4)
+
+# Task 8
+print("\nTask 8")
+qiymet = 75.5
+tam = int(qiymet)
+print(tam, type(tam))
+
+# Task 9
+print("\nTask 9")
+n = 20
+print((n > 10) or (n < 5))
+print((n > 15) and (n < 25))
+
+# Task 10
+print("\nTask 10")
+val = "42.8"
+flt = float(val)
+print(flt, type(flt))
+tam = int(flt)
+print(tam, type(tam))
+
+
+# Sprint 2a - LÄ°ST ÆMÆLÄ°YYATLARI
+
+# Task 1
+print("\nTask 1")
+reqemler = [5, 10, 15, 20]
+print(reqemler)
+
+# Task 2
+print("\nTask 2")
+print(len(reqemler))
+
+# Task 3
+print("\nTask 3")
+reqemler.append(25)
+print(reqemler)
+
+# Task 4
+print("\nTask 4")
+reqemler.insert(2, 12)
+print(reqemler)
+
+# Task 5
+print("\nTask 5")
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+birlesmis = list1 + list2
+print(birlesmis)
+
+# Task 6
+print("\nTask 6")
+print(reqemler[2:4])
+
+# Task 7
+print("\nTask 7")
+reqemler[0] = 50
+print(reqemler)
+
+# Task 8
+print("\nTask 8")
+print(19 in reqemler)
+
+# Task 9
+print("\nTask 9")
+lst = ["a", "b", "a", "c"]
+print(lst.count("a"))
+
+# Task 10
+print("\nTask 10")
+lst2 = ["x", "y", "x", "z"]
+lst2 = [i for i in lst2 if i != "x"]
+print(lst2)
+
+# Task 11
+print("\nTask 11")
+lst3 = [7, 2, 9, 1]
+lst3.sort(reverse=True)
+print(lst3)
+
+# Task 12
+print("\nTask 12")
+print([i for i in reqemler if i > 10])
+
+
+# Sprint 1b - STRING ÆMÆLÄ°YYATLARI
+
+# Task 1
+print("\nTask 1")
+s = "Programming"
+print(len(s), s[0])
+
+# Task 2
+print("\nTask 2")
+s1, s2 = "Hello", "World"
+print(s1 + " " + s2)
+
+# Task 3
+print("\nTask 3")
+text = "Python"
+print(text[-1])
+
+# Task 4
+print("\nTask 4")
+s = "Artificial"
+print(s[:3])
+
+# Task 5
+print("\nTask 5")
+word = "Code"
+print(word[::-1])
+
+# Task 6
+print("\nTask 6")
+s = "abcdefgh"
+print(s[::2])
+
+# Task 7
+print("\nTask 7")
+text = "data"
+print(text.upper(), text.lower())
+
+# Task 8
+print("\nTask 8")
+s = "Python-R-Java"
+print(s.split("-"))
+
+# Task 9
+print("\nTask 9")
+ad = "Ayxan"
+yas = 25
+print(f"{ad} {yas} yaÅŸÄ±ndadÄ±r")
+
+# Task 10
+print("\nTask 10")
+s = "salam-dunya"
+print(s.replace("-", " "))
+
+
+# Sprint 2b - PANDAS VÆ DATAFRAME ÆMÆLÄ°YYATLARI
+
+import pandas as pd
+
+# Task 1
+print("\nTask 1")
+s1 = pd.Series([10, 20, 30, 40])
+print(s1)
+
+# Task 2
+print("\nTask 2")
+s1.index = ['w', 'x', 'y', 'z']
+print(s1)
+
+# Task 3
+print("\nTask 3")
+s2 = pd.Series({'p': 5, 'q': 10, 'r': 15})
+print(s2)
+
+# Task 4
+print("\nTask 4")
+print(s2['q'])
+
+# Task 5
+print("\nTask 5")
+print(s1[s1 > 25])
+
+# Task 6
+print("\nTask 6")
+print(s1[s1 > 20] / 10)
+
+# Task 7
+print("\nTask 7")
+df1 = pd.DataFrame([[1, 2], [3, 4]])
+print(df1)
+
+# Task 8
+print("\nTask 8")
+df1.index = ['r1', 'r2']
+df1.columns = ['c1', 'c2']
+print(df1)
+
+# Task 9
+print("\nTask 9")
+df2 = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})
+print(df2)
+
+# Task 10
+print("\nTask 10")
+print(df2[df2['A'] > 1])
